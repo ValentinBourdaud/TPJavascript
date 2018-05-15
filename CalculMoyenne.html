@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Javascript</title>
+</head>
+<body>
+  <script type="text/javascript">
+  var notes = [15 ,12 ,18 ,14 ,16 ,16 ,19 ,13 ,11 ,10 ,16 ,15];
+  var i;
+  var moyenne;
+  function GetMoyenne(notes){
+    var valeur=0
+    for(var i=0;i<notes.length;i++){
+        valeur=valeur + notes[i];
+      }
+        valeur= valeur/notes.length;
+    moyenneModifiee = valeur.toFixed(2);
+      return moyenneModifiee;
+    }
+moyenne= GetMoyenne(notes);
+document.write("La moyenne est " + moyenne);
+</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Javascript</title>
+</head>
+<body>
+  <h1>Je suis un titre de tableau:-)</h1>
+
+  <input type="text" name="prenom" id="prenom"/>
+
+  <script type="text/javascript">
+    var tableau1={
+    "anatole":19,
+    "bernard":45,
+    "christophe":34,
+    "dominque":55,
+    "franck":28,
+    "georges":78,
+    "lucas":12,
+    "madeleine":30,
+    "pierre":25,
+    }
+    function GetAge(){
+      prenom=document.getElementById('prenom').value;
+      if(typeof(tableau1[prenom])==="undefined"){
+      alert(prenom + " n'est pas trouvé");}
+      else{
+        prenomModifie=prenom.charAt(0).toUpperCase() + prenom.slice(1);
+        alert(prenomModifie + " a " + tableau1[prenom] + " ans");
+      }
+    }
+    </script>
+<input type="button" onclick='GetAge()' value="Quel age as-tu"/>
+</body>
+</html>

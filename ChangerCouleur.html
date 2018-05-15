@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Javascript</title>
+</head>
+<body>
+  <input type="button" onclick='Rouge()' value="Rouge"/>
+  <input type="button" onclick='Vert()' value="Vert"/>
+  <input type="button" onclick='Bleu()' value="Bleu"/>
+
+<div id="monDiv" style='height:150px ; width:150px ; background-color: black'></div>
+
+  <script type="text/javascript">
+  function Rouge(){
+    rouge= document.getElementById('monDiv').style.backgroundColor='red';
+    return rouge;
+  }
+  function Bleu(){
+    bleu= document.getElementById('monDiv').style.backgroundColor='blue';
+    return bleu;
+  }
+  function Vert(){
+    vert= document.getElementById('monDiv').style.backgroundColor='green';
+    return vert;
+  }
+
+  </script>
+  </body>
+  </html>
