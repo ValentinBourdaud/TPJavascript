@@ -5,12 +5,14 @@
 </head>
 <body>
   <script type="text/javascript">
+
   var b=4;
-  var a = 12;
+
   function MultiplierPar2(b){
-    b= b*2;
+    var a = b*2;
     return a;
   }
+  a=MultiplierPar2(b);
 
   document.write("Le double de ", b, " est ", MultiplierPar2(b), "<br/>");
   document.write("Le valeur a est ", a);
