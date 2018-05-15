@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf8"/>
+</head>
+<body id="test">
+  <script type="text/javascript">
+  function afterResultLoad() {
+    document.getElementById("test").innerHTML = xhttp.responseText;
+}
+var xhttp = new XMLHttpRequest();
+xhttp.onload = afterResultLoad;
+xhttp.open("GET","http://loisirs-web-backend.cleverapps.io/db", true);
+xhttp.send();
+console.log(xhttp);
+
+</script>
+</body>
+</html>
